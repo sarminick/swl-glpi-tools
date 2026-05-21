@@ -1,14 +1,95 @@
 body.welcome-anonymous{
   margin: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
   font-family: sans-serif;
-  background-image: url(https://swisslub.com/wp-content/uploads/2026/04/login-fondo-scaled.png);
+  /* background: #0f0f10; */
+  background-image: url(https://swisslub.com/wp-content/uploads/2026/05/ChatGPT-Image-May-15-2026-09_37_59-AM.png);
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: cover;
 }
+/* body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 255, 255, 0.08) 0%,
+    rgba(255, 255, 255, 0.02) 35%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+  z-index: 0;
+} */
+
+/* body::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at left,
+    rgba(255, 0, 0, 0.15),
+    transparent 40%
+  ),
+  radial-gradient(
+    circle at right,
+    rgba(255, 0, 0, 0.15),
+    transparent 40%
+  );
+  z-index: 0;
+} */
 
 
 .content-login-title {
   text-align: center;
+}
+
+.container-tight .text-center {
+  display: none;
+}
+.container-tight .card-md{
+  border-radius: 20px;
+}
+.container-tight .row .col-md-5 {
+  width: 100%;
+}
+/* body.page-anonymous .container-tight {
+  max-width: 35rem !important;
+} */
+
+
+form[action*="login"] button {
+  background-color: #e2211d;
+  color: white;
+}
+form[action*="login"] button:hover {
+  background-color: #363335;
+  border-color: #363335;
+  color: white;
+}
+
+input#login_remember {
+  background-color: #e2211d;
+}
+
+
+body .page .glpi-logo {
+  display: block;
+  background-image: url(../../../pics/new-logo-swisslub-white.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+body .page-anonymous, body .page-anonymous > div{
+  height: 100vh;
+}
+
+body .page-anonymous > div{ 
+  margin: 0;
+  padding: 0;
+}
+
+body.navbar-collapsed .page .glpi-logo {
+  background-image: url(../../../pics/small-logo-swisslub-white.png);
 }
