@@ -1,12 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
-   const loginForm = document.querySelector("form[action*='login']");
 
+   // document.querySelector('.container-tight').style.maxWidth = '35rem';
+   const loginForm = document.querySelector("form[action*='login']");
+   const faviconLink = document.querySelector("link[rel='shortcut icon']");
+
+   if (faviconLink) {
+      faviconLink.href = "/pics/favicon-swisslub-white.png";
+   }
+   
    if (loginForm) {
         const divTitle = document.createElement("div");
 
         divTitle.classList.add("content-login-title");
 
-        divTitle.innerHTML = "<h1>BIENVENIDO A LA MESA DE AYUDA DE SWISSLUB S.A.S</h1>";
+        divTitle.innerHTML = "<img src='https://swisslub.com/wp-content/uploads/2026/04/new-logo-1.png'>";
 
       loginForm.parentNode.insertBefore(divTitle, loginForm);
    }
